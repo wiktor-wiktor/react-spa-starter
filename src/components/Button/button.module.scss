@@ -1,0 +1,52 @@
+.button {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  max-width: 230px;
+  min-width: 120px;
+  padding: 0.6em 1.2em;
+  text-align: center;
+  transition: border-color 0.25s;
+  user-select: none;
+
+  & + & {
+    margin-left: 1rem;
+  }
+  
+  &:hover {
+    border-color: #646cff;
+  }
+  
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+
+  &:active {
+    background-color: #0a0a0a;
+  }
+
+  &:disabled {
+    background-color: #1a1a1a;
+    color: #a0a0a0;
+    cursor: not-allowed;
+  }
+
+  &.primary {
+    background-color: #646cff;
+    color: #fff;
+    
+    &:hover {
+      background-color: #4a4aff;
+    }
+    
+    &:active {
+      background-color: #3232ff;
+    }
+  }
+}
