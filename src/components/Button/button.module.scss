@@ -1,7 +1,9 @@
 .button {
-  background-color: #1a1a1a;
+  // swap all colors for vars
+  background-color: var(--secondary-color);
   border-radius: 8px;
   border: 1px solid transparent;
+  color: var(--primary-font-color);
   cursor: pointer;
   display: inline-block;
   font-size: 1em;
@@ -19,34 +21,34 @@
   }
   
   &:hover {
-    border-color: #646cff;
+    border-color: var(--hover-border);
   }
   
   &:focus,
   &:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
+    background-color: var(--secondary-color-focus);
+    outline: var(--focus-border);
   }
 
   &:active {
-    background-color: #0a0a0a;
+    background-color: var(--secondary-color-active);
   }
 
   &:disabled {
-    background-color: #1a1a1a;
-    color: #a0a0a0;
+    background-color: var(--secondary-color-disabled);
+    color: var(--secondary-font-color-disabled);
     cursor: not-allowed;
   }
 
   &.primary {
-    background-color: #646cff;
-    color: #fff;
+    background-color: var(--primary-color);
     
     &:hover {
-      background-color: #4a4aff;
+      background-color: var(--primary-color-hover);
     }
     
     &:active {
-      background-color: #3232ff;
+      background-color: var(--primary-color-active);
     }
   }
 }
